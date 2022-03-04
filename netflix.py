@@ -19,7 +19,14 @@ time.sleep(1)
 
 driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div/div/div[1]/form/button').click()
 
+#driver.find_element_by_css_selector("a[data-uia=action-select-profile+secondary]").click()
+time.sleep(3)
 driver.find_element_by_link_text('Hitesh').click()
+
+#movie_description
+#summary = driver.find_element_by_xpath('/html/body/div[2]/div/div/div[1]/div[1]/div[2]/div/span/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div').text
+summary = driver.find_element_by_class_name('synopsis no-supplemental').text
+print(summary)
 #driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div[1]/div[2]/div/div/ul/li[2]/div/a').click()
 #driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div[1]/div[2]/div/div/ul/li[2]/div/a/span').click()
 #driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div[1]/div[2]/div/span/div/div/div/div/div/div[1]/div[2]/div[1]/div[1]').click()
